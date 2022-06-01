@@ -1,9 +1,8 @@
 package lesson1;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class appLesson1 {
+public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -16,9 +15,9 @@ public class appLesson1 {
 
         //System.out.println(team.getName() + "\n" + Arrays.toString(team.getRunners()));
 
-        System.out.println("Enter track lenght: ");
+        System.out.println("Enter track length: ");
         Course track = new Course(scanner.nextInt());
-        System.out.println("Track lenght: " + track.getTracklength());
+        System.out.println("Track length: " + track.getTracklength());
         String result = track.runDownTheTrack(team);
         System.out.println(result);
 /*
@@ -51,9 +50,9 @@ public class appLesson1 {
         Team runners = new Team();
         Team jumpers = new Team();
         Team swimmers = new Team();
-        System.out.println("Enter track lenght: ");
+        System.out.println("Enter track length: ");
         Course track = new Course(scanner.nextInt());
-        System.out.println("Track lenght: " + track.getTracklength());
+        System.out.println("Track length: " + track.getTracklength());
 
         Runner[] arrRunners = {runners.athlet1, runners.athlet2, runners.athlet3, runners.athlet4};
         for (Runner arrRunner : arrRunners) {
