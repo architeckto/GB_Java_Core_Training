@@ -35,7 +35,7 @@ public class Course {
 
     private void tracklength(Runner runner, int value) {
         if (tracklength > value){
-            result += "бегун: " + runner.getName() + " пробежал " + value + " метров.\n";
+            result += "бегун " + runner.getName() + " пробежал " + value + " метров.\n";
         }else {
             System.out.println("Дистанция слишком длинная для " + runner.getName());
         }
